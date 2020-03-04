@@ -1,0 +1,14 @@
+﻿<Window x:Class="VideoPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <MediaElement Name="VideoPlayer" Width="800" Height="450" MediaEnded="Play_Next" Margin="0,-8,0,-8" />
+        <Label Name="progress" Content=" " HorizontalAlignment="Left" Margin="366,155,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn" Content="Begin" HorizontalAlignment="Left" Margin="388,239,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>
